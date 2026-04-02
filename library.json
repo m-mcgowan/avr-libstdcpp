@@ -1,0 +1,17 @@
+{
+    "name": "avr-libstdcpp",
+    "version": "1.0.0",
+    "description": "Subset of GCC libstdc++ for AVR with no exceptions/RTTI",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/modm-io/avr-libstdcpp.git"
+    },
+    "license": "GPL-3.0-or-later WITH GCC-exception-3.1",
+    "platforms": ["atmelavr", "atmelmegaavr"],
+    "frameworks": "*",
+    "build": {
+        "includeDir": "include",
+        "srcDir": "src",
+        "srcFilter": ["+<*>", "-<hash_bytes.cc>", "-<hashtable_c++0x.cc>"]
+    }
+}
